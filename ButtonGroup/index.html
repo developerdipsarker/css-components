@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Group</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .button-group {
+        display: flex;
+      }
+      .btn {
+        padding: 10px 15px;
+        background-color: #887bb0;
+        border: none;
+        color: white;
+      }
+      .btn:hover {
+        background-color: #887bb0ee;
+      }
+      .btn:not(:last-child) {
+        border-right: 1px solid rgba(100, 100, 100, 0.623);
+      }
+      .btn:first-child {
+        border-radius: 5px 0 0 5px;
+      }
+      .btn:last-child {
+        border-radius: 0 5px 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-group">
+      <button type="button" class="btn">Button</button>
+      <button type="button" class="btn">Button</button>
+      <button type="button" class="btn">Button</button>
+      <button type="button" class="btn">Button</button>
+    </div>
+  </body>
+</html>

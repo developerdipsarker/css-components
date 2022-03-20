@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breadcrumb</title>
+    <style>
+      .breadcrumb{
+        padding: 0;
+        list-style: none;
+        font-family: sans-serif;
+      }
+      .breadcrumb__item{
+        display: inline-block;
+      }
+      .breadcrumb__link{
+        text-decoration: none;
+        color: gray;
+      }
+      .breadcrumb__link:hover{
+        text-decoration: underline;
+      }
+      .breadcrumb__link--active{
+        font-weight: bold;
+        color: rgb(39, 190, 170);
+      }
+      .breadcrumb__item:not(:last-child)::after{
+        /* content: "/"; */
+        content: "\203a";
+        margin: 0 5px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="breadcrumb">
+      <li class="breadcrumb__item">
+        <a href="" class="breadcrumb__link">Home</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="" class="breadcrumb__link">Blog</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="" class="breadcrumb__link">Technology</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="" class="breadcrumb__link">Programming</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="" class="breadcrumb__link breadcrumb__link--active">Javascript</a>
+      </li>
+    </ul>
+  </body>
+</html>

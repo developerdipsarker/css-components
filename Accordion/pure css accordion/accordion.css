@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+}
+.accordion {
+  max-width: 450px;
+}
+.accordion__onclick {
+  display: none;
+}
+.accordion__item {
+  padding: 20px;
+  background: teal;
+  display: block;
+  color: white;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+.accordion__item::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  /* content: "\25b2";  Hax-Decimal Down Arrow*/
+  content: "\f0d7";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -5px;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+.accordion__content {
+  margin: 10px;
+}
+.accordion__content-area {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  overflow: hidden;
+  transition: 0.4s;
+  max-height: 0;
+}
+/* 
+trantation property not 
+working if hight not fixed 
+*/
+.accordion__onclick:checked ~ .accordion__content-area {
+  max-height: 100px;
+}
+.accordion__onclick:checked ~ .accordion__item::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}

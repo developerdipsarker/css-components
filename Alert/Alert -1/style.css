@@ -1,0 +1,99 @@
+/* It's a COMPONENTS SO THOSE STYLE COMES FORM PRODUCTION GLOBAL STYLE. */
+/* ------------------------------------ */
+body {
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* color success for bakcground__________ */
+.alert__color--success {
+  background-color: #c5f7dd;
+  /* border: 1px solid #a5d3be; */
+  border-left: 5px solid #3ac279;
+}
+.alert__color--denger {
+  background-color: #ffcfcb;
+  /* border: 1px solid #ecbbb6; */
+  border-left: 5px solid #e9594c;
+}
+.alert__color--warning {
+  background-color: #ffe8c3;
+  /* border: 1px solid #eccc98; */
+  border-left: 5px solid #e89f29;
+}
+.alert__color--info {
+  background-color: #cde2ff;
+  /* border: 1px solid #a5c1e9; */
+  border-left: 5px solid #3d84e5;
+}
+
+/* color success for icons__________ */
+.alert__icons--success {
+  color: #3ac279;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.alert__icons--denger {
+  color: #ed7065;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.alert__icons--warning {
+  color: #e89f29;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.alert__icons--info {
+  color: #3d84e5;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/* color success for close icons__________ */
+.alert__close {
+  background: none;
+  border: 0;
+  font-size: 17px;
+  margin-left: auto;
+}
+
+.alert__close--success {
+  color: #3ac279;
+}
+
+.alert__close--denger {
+  color: #e9594c;
+}
+.alert__close--warning {
+  color: #e89f29;
+}
+.alert__close--info {
+  color: #3d84e5;
+}
+
+/* 
+-----------------------------------
+Alert Styleing 
+----------------------------------- 
+*/
+.alert {
+  padding: 5px 20px 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  width: 500px;
+  margin: 10px;
+}
+.alert__content {
+  color: rgba(0, 0, 0, 0.637);
+}
